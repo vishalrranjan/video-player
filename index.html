@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="css/progress.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <!-- <link rel="shortcut icon" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <script defer src="/index.js"></script>
+</head>
+<body>
+    <h1>Custom Video Player</h1>
+    <video  src="/video/1. Project Intro.mp4" id="video" class="screen" poster="/img/video.png"> </video>
+
+    <div class="controls">
+        <button class="btn" id="play" title="Play">
+            <i class="fas fa-play fa-2x"></i>
+        </button>
+        <button class="btn" id="stop" title="stop">
+            <i class="fas fa-stop fa-2x"></i>
+        </button>
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+        <span id="timestamp" class="timestamp">00:00</span>
+    </div>
+    <script src="https://kit.fontawesome.com/f50051eaca.js" crossorigin="anonymous"></script>
+</body>
+</html>
